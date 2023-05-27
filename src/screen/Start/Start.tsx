@@ -17,6 +17,12 @@ const Start = ({ navigation }) => {
           Event Screen
         </Button>
       </View>
+      <View style={styles.mv20}>
+        <Text>CustomAnimation</Text>
+        <Button onPress={() => navigation.navigate('CustomAnimation')}>
+          CustomAnimation
+        </Button>
+      </View>
     </View>
   );
 };
