@@ -18,9 +18,9 @@ const Start = ({ navigation }) => {
         </Button>
       </View>
       <View style={styles.mv20}>
-        <Text>CustomAnimation</Text>
-        <Button onPress={() => navigation.navigate('CustomAnimation')}>
-          CustomAnimation
+        <Text>WaveAnimation</Text>
+        <Button onPress={() => navigation.navigate('WaveAnimation')}>
+          WaveAnimation
         </Button>
       </View>
     </View>

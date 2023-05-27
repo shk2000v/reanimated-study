@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Start from '../screen/Start/Start';
 import Event from '../screen/Event/Evnet';
-import CustomAnimation from '../screen/CustomAnimation/CustomAnimation';
+import WaveAnimation from '../screen/WaveAnimation/WaveAnimation';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,8 +28,8 @@ const Navigation = () => {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="CustomAnimation"
-          component={CustomAnimation}
+          name="WaveAnimation"
+          component={WaveAnimation}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
