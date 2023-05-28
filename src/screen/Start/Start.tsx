@@ -1,9 +1,11 @@
+import React, { FC } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Text from '../../atom/Text/Text';
 import { Button } from '../../atom/Button/Button';
 import { WIDTH } from '../../constants';
+import { RootStackScreenProps } from '../../navigation/type';
 
-const Start = ({ navigation }) => {
+const Start: FC<RootStackScreenProps<'Start'>> = ({ navigation, route }) => {
   return (
     <View style={styles.pd20}>
       <Text>Start Screen</Text>
@@ -15,6 +17,12 @@ const Start = ({ navigation }) => {
         <Text>Event Screen</Text>
         <Button onPress={() => navigation.navigate('Event')}>
           Event Screen
+        </Button>
+      </View>
+      <View style={styles.mv20}>
+        <Text>WaveAnimation</Text>
+        <Button onPress={() => navigation.navigate('WaveAnimation')}>
+          WaveAnimation
         </Button>
       </View>
     </View>
